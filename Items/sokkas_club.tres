@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://ddehnbs4vtqqr"]
+
+[ext_resource type="Script" uid="uid://byrtsmhysnmfi" path="res://Items/item_data.gd" id="1_e7p2j"]
+[ext_resource type="Texture2D" uid="uid://dqntfm6hq4unx" path="res://UI/Inventory/items/sokkas_club.png" id="1_xbkw6"]
+
+[resource]
+script = ExtResource("1_e7p2j")
+item_id = "sokkas_club"
+item_name = "Sokka's Club"
+description = "A traditional Water Tribe club carried by Sokka. A sturdy melee weapon suited for close combat."
+icon = ExtResource("1_xbkw6")
+category = 0
+usable_by = Array[String](["Sokka"])
+transferable = false
+sellable = false
+metadata/_custom_type_script = "uid://byrtsmhysnmfi"

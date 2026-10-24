@@ -1,0 +1,219 @@
+[gd_scene format=3 uid="uid://sh16phopbe4g"]
+
+[ext_resource type="Texture2D" uid="uid://si4kes6qispf" path="res://UI/Inventory/Artwork/inventory_water.png" id="1_qpvb7"]
+[ext_resource type="Texture2D" uid="uid://dqntfm6hq4unx" path="res://UI/Inventory/items/sokkas_club.png" id="2_gka8b"]
+[ext_resource type="Texture2D" uid="uid://cvkx8ddb6bmqv" path="res://assets/characters/katara/frames/idle_down.png" id="2_v74nj"]
+
+[node name="InventoryUI" type="Control" unique_id=1544591079]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventoryPanel" type="Control" parent="." unique_id=632136650]
+anchors_preset = 0
+offset_left = 5.0
+offset_top = 16.0
+offset_right = 295.0
+offset_bottom = 179.0
+
+[node name="Background" type="TextureRect" parent="InventoryPanel" unique_id=531045579]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qpvb7")
+expand_mode = 1
+
+[node name="SlotOverlay" type="Control" parent="InventoryPanel" unique_id=373005185]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StorageSlot1" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=2111574873]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 48.0
+offset_right = 178.0
+offset_bottom = 68.0
+flat = true
+
+[node name="ItemIcon" type="TextureRect" parent="InventoryPanel/SlotOverlay/StorageSlot1" unique_id=1956537496]
+layout_mode = 0
+offset_right = 20.0
+offset_bottom = 20.0
+mouse_filter = 2
+texture = ExtResource("2_gka8b")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageSlot2" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=169576429]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 48.0
+offset_right = 209.0
+offset_bottom = 68.0
+flat = true
+
+[node name="StorageSlot3" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=2029705231]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 48.0
+offset_right = 239.0
+offset_bottom = 68.0
+flat = true
+
+[node name="StorageSlot4" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=753110493]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 48.0
+offset_right = 270.0
+offset_bottom = 68.0
+flat = true
+
+[node name="StorageSlot5" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=1612242]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 78.0
+offset_right = 178.0
+offset_bottom = 98.0
+flat = true
+
+[node name="StorageSlot6" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=2065177324]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 78.0
+offset_right = 209.0
+offset_bottom = 98.0
+flat = true
+
+[node name="StorageSlot7" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=92968355]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 78.0
+offset_right = 239.0
+offset_bottom = 98.0
+flat = true
+
+[node name="StorageSlot8" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=49137563]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 78.0
+offset_right = 270.0
+offset_bottom = 98.0
+flat = true
+
+[node name="HotbarSlot1" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=937742502]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 119.0
+offset_right = 170.0
+offset_bottom = 133.0
+flat = true
+
+[node name="HotbarSlot2" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=1855571458]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 119.0
+offset_right = 190.0
+offset_bottom = 133.0
+flat = true
+
+[node name="HotbarSlot3" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=20301532]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 119.0
+offset_right = 210.0
+offset_bottom = 133.0
+flat = true
+
+[node name="HotbarSlot4" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=2110746847]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 119.0
+offset_right = 231.0
+offset_bottom = 133.0
+flat = true
+
+[node name="HotbarSlot5" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=733075293]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 119.0
+offset_right = 251.0
+offset_bottom = 133.0
+flat = true
+
+[node name="HotbarSlot6" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=1699541583]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 119.0
+offset_right = 272.0
+offset_bottom = 133.0
+flat = true
+
+[node name="BackpackSlot" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=1293072508]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 106.0
+offset_right = 128.0
+offset_bottom = 127.0
+flat = true
+
+[node name="Trinket2Slot" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=727405223]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 73.0
+offset_right = 128.0
+offset_bottom = 94.0
+flat = true
+
+[node name="Trinket1Slot" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=858190243]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 41.0
+offset_right = 128.0
+offset_bottom = 62.0
+flat = true
+
+[node name="HeadSlot" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=1390417208]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 41.0
+offset_right = 41.0
+offset_bottom = 62.0
+flat = true
+
+[node name="UpperBodySlot" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=1903185240]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 73.0
+offset_right = 41.0
+offset_bottom = 94.0
+flat = true
+
+[node name="LowerBodySlot" type="Button" parent="InventoryPanel/SlotOverlay" unique_id=195825167]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 106.0
+offset_right = 41.0
+offset_bottom = 127.0
+flat = true
+
+[node name="CharacterPortrait" type="TextureRect" parent="InventoryPanel" unique_id=1822635024]
+layout_mode = 1
+offset_left = 55.0
+offset_top = 47.0
+offset_right = 94.0
+offset_bottom = 125.0
+mouse_filter = 2
+texture = ExtResource("2_v74nj")
+expand_mode = 1
+stretch_mode = 5

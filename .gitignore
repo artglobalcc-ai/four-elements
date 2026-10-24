@@ -1,0 +1,22 @@
+# Godot 4+ generated files (regenerated on project open — never commit)
+.godot/
+/android/
+
+# Export builds (local only)
+exports/
+*.apk
+*.aab
+*.exe
+*.x86_64
+*.zip
+
+# Local metadata and manual backup copies
+.DS_Store
+Thumbs.db
+/backups/
+
+# Editor / OS noise
+*~
+*.swp
+.vscode/
+.idea/

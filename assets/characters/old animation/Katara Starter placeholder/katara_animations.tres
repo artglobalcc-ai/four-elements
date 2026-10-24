@@ -1,0 +1,301 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://c22po1e6o27x0"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_down.png" id="1_fmidg"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_down_left.png" id="2_blwby"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_down_right.png" id="3_ij5rw"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_left.png" id="4_54jme"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_right.png" id="5_71x35"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_up.png" id="6_tlh0j"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_up_left.png" id="7_1egym"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/idle_up_right.png" id="8_3tjui"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_00.png" id="9_1v3a7"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_01.png" id="10_yww81"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_02.png" id="11_a6uky"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_03.png" id="12_m5ah4"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_left_00.png" id="13_uwhci"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_left_01.png" id="14_r6mou"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_left_02.png" id="15_lmix4"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_left_03.png" id="16_0dbqs"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_right_00.png" id="17_hxt8c"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_right_01.png" id="18_j38xc"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_right_02.png" id="19_p1te8"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_down_right_03.png" id="20_7yrp1"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_left_00.png" id="21_65fv1"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_left_01.png" id="22_8us7q"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_left_02.png" id="23_cxmnf"]
+[ext_resource type="Texture2D" path="res://assets/characters/katara/Katara Starter placeholder/frames/walk_left_03.png" id="24_tqbls"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fmidg")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_blwby")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_down_left",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ij5rw")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_down_right",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_54jme")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_left",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_71x35")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_right",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_tlh0j")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_up",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_1egym")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_up_left",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_3tjui")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"idle_up_right",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_1v3a7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_yww81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_a6uky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_m5ah4")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_uwhci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r6mou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_lmix4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0dbqs")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_down_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_hxt8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_j38xc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_p1te8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_7yrp1")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_down_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_65fv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8us7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_cxmnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_tqbls")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_up_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"walk_up_right",
+"speed": 5.0
+}]

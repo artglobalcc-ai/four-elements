@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://ctwu3sr6e50ym"]
+
+[ext_resource type="Texture2D" uid="uid://m0gljp35etra" path="res://UI/Inventory/items/Fish1.png" id="1_p2ymn"]
+[ext_resource type="Script" uid="uid://byrtsmhysnmfi" path="res://Items/item_data.gd" id="1_yo8ld"]
+
+[resource]
+script = ExtResource("1_yo8ld")
+item_id = "fish1"
+item_name = "Fish"
+description = "A fresh Fish. Can be roasted or used as an ingredient."
+icon = ExtResource("1_p2ymn")
+category = 2
+max_stack = 20
+value = 5
+consumable = true
+metadata/_custom_type_script = "uid://byrtsmhysnmfi"
