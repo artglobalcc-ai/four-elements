@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://sandboxes/party_foundation/weapon_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://Items/sokkas_club.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+item = ExtResource("2")
+damage = 10.0
+force = 1.0
+reach = 42.0
+windup = 0.12
+active_time = 0.10
+recovery = 0.20

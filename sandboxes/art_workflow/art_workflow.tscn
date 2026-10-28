@@ -1,0 +1,356 @@
+[gd_scene format=3]
+
+[ext_resource type="SpriteFrames" uid="uid://cjh6y5aaq1by6" path="res://assets/characters/katara/katara_animations.tres" id="1_f3sb7"]
+[ext_resource type="Texture2D" uid="uid://dycfvi7pfsuik" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/southern_water_tribe_village_prototype.png" id="1_tlwt5"]
+[ext_resource type="Script" path="res://scripts/movement scripts/character_controller.gd" id="2_036b0"]
+[ext_resource type="Texture2D" uid="uid://bwllw74aieuvp" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/decorations/Pixel Art Canoe Asset.png" id="2_dwbse"]
+[ext_resource type="Texture2D" uid="uid://dh7uhceo3w47w" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/buildings/Igloo.png" id="3_2o6r5"]
+[ext_resource type="Texture2D" uid="uid://t47cle0qkqbi" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/decorations/Pixel Art Wooden Barrel Sprite.png" id="3_gbfbk"]
+[ext_resource type="SpriteFrames" uid="uid://ki7wfspboghr" path="res://assets/characters/sokka/sokka_animations.tres" id="4_aqk2v"]
+[ext_resource type="Texture2D" uid="uid://dnmuc3aj375p4" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/walls/Left_Wall_Lower_SWT.png" id="4_k3n1d"]
+[ext_resource type="Texture2D" uid="uid://bj4xx42if8xd" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/walls/Left_Wall_Upper_SWT.png" id="5_2o6r5"]
+[ext_resource type="Script" path="res://scripts/movement scripts/party_controller.gd" id="5_036b0"]
+[ext_resource type="Texture2D" uid="uid://bk0nrh7tpgoo1" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/walls/Right_Wall_Lower_SWT.png" id="6_70uel"]
+[ext_resource type="Texture2D" uid="uid://deeirll75kus6" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/walls/Right_Wall_upper_SWT.png" id="7_hiqwa"]
+[ext_resource type="Script" path="res://scripts/trigger scripts/character_inventory.gd" id="11_2u3nc"]
+[ext_resource type="Script" path="res://scripts/trigger scripts/wall_threshold.gd" id="12_2o6r5"]
+[ext_resource type="Texture2D" uid="uid://degv6f7agu8r5" path="res://assets/environments/Southern_Water_Tribe_Godot_Prototype/soutern watertribe decorations/buildings/IGLOO_DOORWAY.png" id="13_70uel"]
+[ext_resource type="Script" path="res://scripts/trigger scripts/zone_layer_trigger.gd" id="13_hiqwa"]
+[ext_resource type="PackedScene" uid="uid://sh16phopbe4g" path="res://UI/Inventory/inventory_ui.tscn" id="17_udxuc"]
+[ext_resource type="Script" uid="uid://bvlgaseef3upq" path="res://UI/Inventory/inventory_ui.gd" id="18_ikiii"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p1xuh"]
+size = Vector2(673.28625, 343.97583)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wse8f"]
+radius = 3.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k3n1d"]
+radius = 3.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ioo17"]
+normal = Vector2(0, 1)
+distance = -459.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ic0uy"]
+distance = -499.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wse8f"]
+normal = Vector2(1, 0)
+distance = -758.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_i4sc3"]
+normal = Vector2(-1, 0)
+distance = -757.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aj5vm"]
+size = Vector2(185, 29)
+
+[node name="ArtWorkflowSandbox" type="Node2D" unique_id=1928297124]
+
+[node name="VillageBackground" type="Sprite2D" parent="." unique_id=33453876]
+z_index = -1
+texture = ExtResource("1_tlwt5")
+
+[node name="YSort" type="Node2D" parent="." unique_id=64079206]
+y_sort_enabled = true
+
+[node name="Assets" type="Node2D" parent="YSort" unique_id=572591972]
+y_sort_enabled = true
+position = Vector2(-228, -203)
+scale = Vector2(0.13866967, 0.13866967)
+
+[node name="Decorations" type="Node2D" parent="YSort/Assets" unique_id=1505573180]
+y_sort_enabled = true
+
+[node name="Barrel1" type="Sprite2D" parent="YSort/Assets/Decorations" unique_id=156226685]
+position = Vector2(2397.7844, 183.80415)
+scale = Vector2(0.36336404, 0.34917834)
+texture = ExtResource("3_gbfbk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Assets/Decorations/Barrel1" unique_id=625225950]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Assets/Decorations/Barrel1/StaticBody2D" unique_id=1128174539]
+position = Vector2(0, 304.87662)
+scale = Vector2(0.9999998, 1)
+shape = SubResource("RectangleShape2D_p1xuh")
+
+[node name="Barrel2" type="Sprite2D" parent="YSort/Assets/Decorations" unique_id=371187054]
+position = Vector2(2679.0286, 273.7545)
+scale = Vector2(0.49752945, 0.55608684)
+texture = ExtResource("3_gbfbk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Assets/Decorations/Barrel2" unique_id=1885538345]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Assets/Decorations/Barrel2/StaticBody2D" unique_id=424546330]
+position = Vector2(-9.347934, 443.01453)
+scale = Vector2(0.99999994, 1)
+shape = SubResource("RectangleShape2D_p1xuh")
+
+[node name="Barrel3" type="Sprite2D" parent="YSort/Assets/Decorations" unique_id=1012492036]
+position = Vector2(2394.1787, 378.4789)
+scale = Vector2(0.49193913, 0.4556972)
+texture = ExtResource("3_gbfbk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Assets/Decorations/Barrel3" unique_id=1810253740]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Assets/Decorations/Barrel3/StaticBody2D" unique_id=1122250003]
+position = Vector2(-7.6293945e-06, 312.98743)
+scale = Vector2(0.9999998, 1)
+shape = SubResource("RectangleShape2D_p1xuh")
+
+[node name="Barrel4" type="Sprite2D" parent="YSort/Assets/Decorations" unique_id=688652243]
+position = Vector2(2596.0977, 692.29266)
+scale = Vector2(0.44162714, 0.42179206)
+texture = ExtResource("3_gbfbk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Assets/Decorations/Barrel4" unique_id=1867905687]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Assets/Decorations/Barrel4/StaticBody2D" unique_id=986090837]
+position = Vector2(-7.6293945e-06, 312.98743)
+scale = Vector2(0.9999998, 1)
+shape = SubResource("RectangleShape2D_p1xuh")
+
+[node name="Barrel5" type="Sprite2D" parent="YSort/Assets/Decorations" unique_id=1277232696]
+position = Vector2(2614.126, 500.97513)
+scale = Vector2(0.3745445, 0.43185472)
+texture = ExtResource("3_gbfbk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Assets/Decorations/Barrel5" unique_id=376630357]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Assets/Decorations/Barrel5/StaticBody2D" unique_id=1400853961]
+position = Vector2(18.168457, 349.70325)
+scale = Vector2(0.9999997, 0.99999976)
+shape = SubResource("RectangleShape2D_p1xuh")
+
+[node name="Buildings" type="Node2D" parent="YSort/Assets" unique_id=1599016401]
+y_sort_enabled = true
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Igloo" type="Sprite2D" parent="YSort/Assets/Buildings" unique_id=2062939868]
+position = Vector2(3302.813, 691)
+scale = Vector2(7.2066884, 7.2113833)
+texture = ExtResource("3_2o6r5")
+offset = Vector2(-230.49, 106.5)
+
+[node name="Walls" type="Node2D" parent="YSort/Assets" unique_id=1653948215]
+y_sort_enabled = true
+
+[node name="LeftWallLower" type="Sprite2D" parent="YSort/Assets/Walls" unique_id=230805734]
+position = Vector2(1644.1947, 1463.9104)
+scale = Vector2(7.211382, 7.211382)
+texture = ExtResource("4_k3n1d")
+
+[node name="LeftWallUpper" type="Sprite2D" parent="YSort/Assets/Walls" unique_id=1959947533]
+position = Vector2(1644.1947, 1463.9104)
+scale = Vector2(7.211382, 7.211382)
+texture = ExtResource("5_2o6r5")
+
+[node name="RightWallLower" type="Sprite2D" parent="YSort/Assets/Walls" unique_id=189510359]
+position = Vector2(1644.1947, 1463.9104)
+scale = Vector2(7.211382, 7.211382)
+texture = ExtResource("6_70uel")
+
+[node name="RightWallUpper" type="Sprite2D" parent="YSort/Assets/Walls" unique_id=1676895165]
+position = Vector2(1644.1947, 1463.9104)
+scale = Vector2(7.211382, 7.211382)
+texture = ExtResource("7_hiqwa")
+
+[node name="QuestItems" type="Node2D" parent="YSort/Assets" unique_id=1691788654]
+
+[node name="Bone Canoe" type="Sprite2D" parent="YSort/Assets/QuestItems" unique_id=720833491]
+scale = Vector2(0.9999998, 0.9999998)
+texture = ExtResource("2_dwbse")
+
+[node name="Collectibles" type="Node2D" parent="YSort/Assets" unique_id=236884712]
+
+[node name="Characters" type="Node2D" parent="YSort" unique_id=1997405844]
+y_sort_enabled = true
+
+[node name="Katara" type="CharacterBody2D" parent="YSort/Characters" unique_id=96635703]
+position = Vector2(0, 360)
+scale = Vector2(1.5, 1.5)
+collision_layer = 2
+motion_mode = 1
+script = ExtResource("2_036b0")
+walk_speed = 100.0
+jump_travel_speed = 100.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="YSort/Characters/Katara" unique_id=1575320145]
+position = Vector2(-1.1920929e-07, 0)
+scale = Vector2(0.45, 0.45)
+sprite_frames = ExtResource("1_f3sb7")
+animation = &"idle_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Characters/Katara" unique_id=1185397590]
+position = Vector2(0, 10)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_wse8f")
+
+[node name="Inventory" type="Node" parent="YSort/Characters/Katara" unique_id=381712687]
+script = ExtResource("11_2u3nc")
+
+[node name="Sokka" type="CharacterBody2D" parent="YSort/Characters" unique_id=1823096340]
+position = Vector2(36, 361)
+scale = Vector2(1.5, 1.5)
+collision_layer = 2
+motion_mode = 1
+script = ExtResource("2_036b0")
+walk_speed = 100.0
+jump_travel_speed = 100.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="YSort/Characters/Sokka" unique_id=1486077669]
+position = Vector2(0, -4)
+scale = Vector2(0.425, 0.425)
+sprite_frames = ExtResource("4_aqk2v")
+animation = &"jump_up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Characters/Sokka" unique_id=142479642]
+position = Vector2(0, 8.666667)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_k3n1d")
+
+[node name="Inventory" type="Node" parent="YSort/Characters/Sokka" unique_id=1995679500]
+script = ExtResource("11_2u3nc")
+
+[node name="NPCs" type="Node2D" parent="YSort" unique_id=1152908117]
+y_sort_enabled = true
+
+[node name="VillageCollisions" type="Node2D" parent="." unique_id=1498889660]
+
+[node name="World Boarder" type="StaticBody2D" parent="VillageCollisions" unique_id=1962203308]
+
+[node name="TopBorder" type="CollisionShape2D" parent="VillageCollisions/World Boarder" unique_id=1138030991]
+shape = SubResource("WorldBoundaryShape2D_ioo17")
+
+[node name="BottomBorder" type="CollisionShape2D" parent="VillageCollisions/World Boarder" unique_id=465236359]
+shape = SubResource("WorldBoundaryShape2D_ic0uy")
+
+[node name="LeftBorder" type="CollisionShape2D" parent="VillageCollisions/World Boarder" unique_id=1437794473]
+shape = SubResource("WorldBoundaryShape2D_wse8f")
+
+[node name="RightBorder" type="CollisionShape2D" parent="VillageCollisions/World Boarder" unique_id=1848479283]
+shape = SubResource("WorldBoundaryShape2D_i4sc3")
+
+[node name="WallsCollisions" type="StaticBody2D" parent="VillageCollisions" unique_id=1341421767]
+
+[node name="GateLeft" type="CollisionPolygon2D" parent="VillageCollisions/WallsCollisions" unique_id=933800289]
+position = Vector2(3.4337769, 0)
+scale = Vector2(1.0236486, 1)
+polygon = PackedVector2Array(-123, 208, -100.06732, 190, -48.291744, 179, -46.337948, 281, -80, 302, -122, 280)
+
+[node name="GateRight" type="CollisionPolygon2D" parent="VillageCollisions/WallsCollisions" unique_id=1944958710]
+position = Vector2(-3.4583302, 0)
+scale = Vector2(1.0208334, 1)
+polygon = PackedVector2Array(48.448975, 181, 100.36733, 201, 139, 200, 112, 270, 112, 289, 86, 297, 49.428566, 287)
+
+[node name="LeftWallLower" type="CollisionPolygon2D" parent="VillageCollisions/WallsCollisions" unique_id=1582215268]
+polygon = PackedVector2Array(-128, 275, -238, 263, -267, 282, -293, 269, -292, 239, -323, 223, -343, 229, -373.09088, 214.83957, -376, 202, -508, 140, -530, 140, -553, 127, -549, 111, -574, 73, -592, 68, -609, 58, -605, 38, -632, 2, -662, -2, -670, -20, -663, -33, -663, -70, -673, -79, -659, -119, -619, -190, -547, -96, -601, -78, -607, -48, -491, 84, -331, 157, -124, 208, -122, 274)
+
+[node name="RightWallLower" type="CollisionPolygon2D" parent="VillageCollisions/WallsCollisions" unique_id=1896704762]
+polygon = PackedVector2Array(99, 202, 157, 200, 255, 207, 356, 196, 424, 172, 505, 116, 541, 67, 540, 9, 496, -47, 477, -59, 485, -74, 466, -93, 476, -170, 502, -154, 533, -135, 547, -122, 549, -113, 556, -108, 561, -101, 566, -93, 569, -84, 576, -76, 581, -67, 581, -61, 584, -55, 585, -45, 592, -37, 595, -20, 605, 4, 590, 15, 593, 61, 608, 94, 588, 107, 584, 132, 559, 142, 549, 174, 496, 185, 451, 212, 450, 234, 430, 244, 406, 238, 287, 272, 261, 285, 228, 275, 164, 266, 103, 276)
+
+[node name="LeftWallUpper" type="CollisionPolygon2D" parent="VillageCollisions/WallsCollisions" unique_id=783887545]
+polygon = PackedVector2Array(-548, -98, -556, -125, -553, -142, -454, -198, -336, -233, -328, -227, -310, -234, -188, -237, -171, -225, -148, -232, -134, -258, -136, -305, -163, -310, -187, -304, -194, -299, -326, -292, -355, -292, -473, -257, -619, -189)
+
+[node name="RightUpperWall" type="CollisionPolygon2D" parent="VillageCollisions/WallsCollisions" unique_id=2125484192]
+polygon = PackedVector2Array(470, -89, 445, -74, 450, -66, 444, -52, 422, -46, 405, -37, 398, -27, 326, -23, 315, -17, 289, -32, 259, -29, 241, -51, 263, -84, 289, -87, 301, -116, 300, -143, 281, -161, 267, -168, 241, -162, 233, -146, 239.83609, -123.00893, 239, -95, 230, -83, 217, -66, 192, -54, 173, -61, 151, -85, 121, -131, 123, -187, 131, -212, 43, -237, 24, -227, 2, -239, 2, -302, 28, -303, 116, -282, 207, -293, 259, -284, 289, -269, 308, -261, 374, -234, 405, -213, 453, -183, 475, -170)
+
+[node name="TundraCollisions" type="StaticBody2D" parent="VillageCollisions" unique_id=2073179551]
+
+[node name="TundraMounds" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=736213456]
+polygon = PackedVector2Array(-239, 440, -301, 469, -385, 432, -358, 372, -334, 370, -303, 348, -270, 352)
+
+[node name="TundraMounds10" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=1570935105]
+polygon = PackedVector2Array(-600, -302, -624, -312, -641, -316, -663, -308, -672, -300, -689, -305, -714, -298, -719, -290, -730, -290, -746, -275, -769, -263, -768, -460, -133, -494, 768, -501, 769, -45, 769, 39, 756, 23, 741, 20, 725, 22, 727, 14, 726, 6, 714, 1, 694, -1, 690, -8, 698, -16, 693, -24, 672, -30, 659, -28, 659, -40, 643, -50, 648, -59, 658, -69, 656, -77, 644, -82, 632, -84, 636, -95, 627, -104, 612, -109, 605, -110, 599, -116, 588, -119, 582, -120, 580, -124, 584, -129, 588, -138, 577, -150, 559, -153, 551, -154, 548, -162, 543, -165, 535, -172, 524, -177, 526, -183, 531, -193, 528, -201, 514, -209, 493, -235, 471, -235, 449, -249, 439, -266, 419, -277, 399, -276, 375, -288, 353, -287, 331, -298, 302, -301, 286, -310, 263, -314, 126, -320, 100, -337, 83, -335, 61, -345, 49, -343, 27, -354, 13, -355, 0, -349, -15, -348, -34, -337, -53, -342, -74, -338, -89, -328, -109, -333, -123, -333, -143, -344, -164, -346, -185, -357, -204, -354, -224, -343, -243, -345, -259, -341, -271, -332, -286, -336, -304, -334, -315, -329, -337, -349, -353, -352, -364, -368, -391, -379, -415, -376, -433, -386, -451, -389, -479, -379, -493, -372, -511, -379, -524, -379, -532, -376, -553, -366, -567, -352, -587, -354, -603, -347, -612, -339, -614, -334, -592, -324, -597, -314, -572, -303, -553, -296, -547, -290, -557, -282, -580, -273, -593, -264, -614, -263, -617, -266, -620, -275, -616, -278, -599, -283, -591, -291)
+
+[node name="TundraMounds9" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=850376121]
+polygon = PackedVector2Array(-645, -249, -649, -254, -665, -251, -674, -247, -692, -242, -709, -242, -734, -258, -733, -266, -745, -275, -768, -262, -768, -190, -755, -194, -746, -195, -742, -199, -731, -213, -717, -219, -703, -222, -689, -233, -673, -241, -656, -240)
+
+[node name="TundraMounds8" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=1042333861]
+polygon = PackedVector2Array(768, 115, 757, 107, 747, 96, 725, 89, 725, 78, 746, 71, 744, 58, 768, 33)
+
+[node name="TundraMounds7" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=1489888190]
+polygon = PackedVector2Array(758, 217, 767, 225, 770, 241, 736.8492, 224.86511, 698, 251, 615, 227, 625, 195, 642, 194, 654, 171, 659, 153, 664, 143, 672, 142, 672, 120, 686, 109, 703, 104, 723, 110, 729, 134, 731, 153, 741, 165, 745, 190, 753, 211)
+
+[node name="TundraMounds6" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=1895330387]
+polygon = PackedVector2Array(717, 360, 733, 407, 673, 430, 647, 418, 619, 433, 580, 427, 573, 415, 555, 402, 530, 397, 529, 387, 555, 312, 564, 303, 573, 265, 598, 259, 620, 265, 629, 282, 630, 306, 642, 325, 657, 303, 674, 298, 691, 303, 699, 311, 706, 344)
+
+[node name="TundraMounds5" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=1547549656]
+polygon = PackedVector2Array(-341, 301, -364, 317, -385, 333, -425, 356, -428, 369, -439, 383, -464, 389, -489, 383, -512, 370, -500, 347, -519, 337, -575, 345, -625, 342, -639, 339, -647, 320, -641, 301, -670, 291, -711, 279, -700, 252, -688, 230, -686, 220, -708, 214, -730, 221, -743, 207, -768, 208, -767, 175, -768, -19, -748, -12, -737, 33, -715, 43, -722, 63, -713, 80, -693, 87, -683, 100, -661, 113, -644, 127, -627, 137, -620, 159, -585, 183, -568, 179, -555, 185, -547, 196, -545, 206, -531, 221, -510, 241, -451, 269, -435, 261, -423, 264, -370, 293)
+
+[node name="TundraMounds4" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=561769199]
+polygon = PackedVector2Array(-669, 365, -700, 386, -720, 388, -735, 400, -738, 409, -747, 407, -769, 424, -770, 343, -739, 348, -714, 342, -704, 340, -709, 351, -690, 360)
+
+[node name="TundraMounds3" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=820409253]
+polygon = PackedVector2Array(-416, 474, -415, 486, -384, 492, -371, 487, -348, 486, -336, 513, -565, 512, -685, 513, -769, 514, -770, 486, -749, 475, -720, 459, -671, 473, -660, 443, -643, 407, -633, 395, -606, 388, -593, 401, -573, 446, -558, 429, -539, 423, -521, 431, -508, 452)
+
+[node name="TundraMounds2" type="CollisionPolygon2D" parent="VillageCollisions/TundraCollisions" unique_id=549403861]
+polygon = PackedVector2Array(410, 365, 431, 340, 439, 309, 469, 300, 491, 310, 504, 369, 504, 377, 509, 381, 513, 400, 527, 438, 517, 452, 425, 481, 393, 475, 316, 444, 340, 386, 362, 370, 344, 356, 315, 372, 300, 387, 267, 407, 266, 421, 237, 433, 215, 440, 205, 438, 200, 415, 178, 406, 168, 397, 314, 323, 351, 313, 351, 337, 384, 354)
+
+[node name="EntranceTriggers" type="Node2D" parent="VillageCollisions" unique_id=509354307]
+
+[node name="FrontEntrance" type="Area2D" parent="VillageCollisions/EntranceTriggers" unique_id=1799145229 node_paths=PackedStringArray("party_controller", "left_lower_wall", "right_lower_wall", "left_upper_wall", "right_upper_wall")]
+script = ExtResource("12_2o6r5")
+party_controller = NodePath("../../../PartyController")
+left_lower_wall = NodePath("../../../YSort/Assets/Walls/LeftWallLower")
+right_lower_wall = NodePath("../../../YSort/Assets/Walls/RightWallLower")
+left_upper_wall = NodePath("../../../YSort/Assets/Walls/LeftWallUpper")
+right_upper_wall = NodePath("../../../YSort/Assets/Walls/RightWallUpper")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VillageCollisions/EntranceTriggers/FrontEntrance" unique_id=1702031391]
+position = Vector2(1.5, 251.5)
+shape = SubResource("RectangleShape2D_aj5vm")
+
+[node name="RearEntrance2" type="Area2D" parent="VillageCollisions/EntranceTriggers" unique_id=606641299 node_paths=PackedStringArray("party_controller", "left_lower_wall", "right_lower_wall", "left_upper_wall", "right_upper_wall")]
+script = ExtResource("12_2o6r5")
+party_controller = NodePath("../../../PartyController")
+left_lower_wall = NodePath("../../../YSort/Assets/Walls/LeftWallLower")
+right_lower_wall = NodePath("../../../YSort/Assets/Walls/RightWallLower")
+left_upper_wall = NodePath("../../../YSort/Assets/Walls/LeftWallUpper")
+right_upper_wall = NodePath("../../../YSort/Assets/Walls/RightWallUpper")
+is_inverse_trigger = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VillageCollisions/EntranceTriggers/RearEntrance2" unique_id=1686858276]
+position = Vector2(-67.5, -273)
+shape = SubResource("RectangleShape2D_aj5vm")
+
+[node name="LayerZones" type="Node2D" parent="VillageCollisions" unique_id=309405312]
+
+[node name="IglooZone" type="Area2D" parent="VillageCollisions/LayerZones" unique_id=1161102885 node_paths=PackedStringArray("party_controller", "target_sprites")]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("13_hiqwa")
+party_controller = NodePath("../../../PartyController")
+target_sprites = [NodePath("../../../doorways/IglooDoorway")]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="VillageCollisions/LayerZones/IglooZone" unique_id=2012773860]
+polygon = PackedVector2Array(212, -69, 227, -69, 233, -70, 239, -68, 254, -65, 304, -66, 383, -136, 314, -206, 220, -192, 170, -109, 190.83018, -89.16176)
+
+[node name="doorways" type="Node2D" parent="." unique_id=1746718141]
+y_sort_enabled = true
+position = Vector2(223, -52)
+
+[node name="IglooDoorway" type="Sprite2D" parent="doorways" unique_id=1625937067]
+z_index = -1
+y_sort_enabled = true
+position = Vector2(17, -13.5)
+scale = Vector2(1, 1.0037823)
+texture = ExtResource("13_70uel")
+offset = Vector2(-240, 65)
+
+[node name="GameCamera" type="Camera2D" parent="." unique_id=1956730764]
+visible = false
+zoom = Vector2(0.7, 0.7)
+
+[node name="PartyController" type="Node" parent="." unique_id=1518117109 node_paths=PackedStringArray("party", "camera")]
+script = ExtResource("5_036b0")
+party = [NodePath("../YSort/Characters/Katara"), NodePath("../YSort/Characters/Sokka")]
+follow_spacing = 55.0
+camera = NodePath("../GameCamera")
+
+[node name="GameUI" type="CanvasLayer" parent="." unique_id=1143646373]
+
+[node name="InventoryUI" parent="GameUI" unique_id=1544591079 instance=ExtResource("17_udxuc")]
+visible = false
+script = ExtResource("18_ikiii")

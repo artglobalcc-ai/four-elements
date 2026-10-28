@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://sandboxes/party_foundation/technique_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+technique_id = &"water_manipulation"
+display_name = "Water Manipulation"
+control_range = 96.0
+control_speed = 150.0
+concentration_seconds = 45.0
